@@ -1,0 +1,21 @@
+.grid-container { /* Espacio donde los elementos hijos se agrupan en cuadriculas */
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* Especifica el tamaño. Tres columnas de 300px cada una */
+    gap: 15px; /* Espaciado uniforme entre filas y columnas */
+    justify-content: center; /* Centra todo el grid horizontalmente */
+}
+
+
+.grid-item {
+    width: 300px; /* Largo y Ancho de los cuadrados */
+    height: 300px;
+}
+
+
+.gallery img {
+    width: 80%; /* Tamaño de la imagen */
+    height: 80%;
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
