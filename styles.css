@@ -1,14 +1,29 @@
 .grid-container { /* Espacio donde los elementos hijos se agrupan en cuadriculas */
     display: grid;
     grid-template-columns: repeat(3, 300px); /* Especifica el tamaño. Tres columnas de 300px cada una */
-    gap: 15px; /* Espaciado uniforme entre filas y columnas */
+    gap: 100px; /* Espaciado uniforme entre filas y columnas */
     justify-content: center; /* Centra todo el grid horizontalmente */
+
+
 }
 
 
-.grid-item {
+.card {
+    border: white;
     width: 300px; /* Largo y Ancho de los cuadrados */
     height: 300px;
+}
+
+.card > p {                  /* En las tarjetas elegimos <p>  */
+    text-decoration:underline  ;  /* El subrrayado  */
+    color: darkgray; /* El color */
+    font-size: 18px;  /* EL tamaño */
+}
+
+.card:hover {
+    border: 3px solid #bbbbbb; /* Borde más grueso al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    transform: translateY(-5px); /* Efecto de levantamiento */
 }
 
 
@@ -19,3 +34,190 @@
     border-radius: 8px; /* Bordes redondeados */
 }
 
+
+.sub-gallery {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+
+
+
+h6 {
+    font-weight: bold; /* Fuente en negrita */
+    text-align: start; /* Alineada al comienzo */
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-control {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-outline-success {        /* Cambiamos el color del botón de bootstrap */
+    background-color: blue;
+}
+
+.footer {
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+    background-color:#000000; /* Fondo negro */
+    padding: 0; /* Sin relleno extra */
+    margin: 0; /* Sin márgenes */
+}
+
+.footer-content {
+    max-width: 100%; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 15px; /* Añade espacio interno en los lados */
+}
+
+.footer-link {
+    color: #bbb; /* Color gris claro */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #fff; /* Cambia a blanco al pasar el ratón */
+    text-decoration: underline;
+}
+
+.footer .list-inline-item:not(:last-child) {
+    margin-right: 10px; /* Separación entre iconos o enlaces */
+}
+
+.btn btn-outline-success {
+    color: blue;
+}
+
+.EE {                       /* le doy a class="EE" para poner en negrita el texto */
+    text-align: start;
+    font-weight: bold;
+
+}
+
+
+.container-1 {              /* Epecifico un numero al contenedor y alineo el texto a la izq con start*/
+    text-align: start;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #161719;
+    padding: 80px 0;
+}
+
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #161719;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+#footer{
+    background-color: #161719;
+}
+/* Estilo para los enlaces del footer */
+footer .text-white {
+    text-decoration: none;
+}
+
+footer .text-white:hover {
+    text-decoration: underline;
+    color: #007bff; /* Color de hover (puedes cambiarlo) */
+}
